@@ -1,0 +1,54 @@
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four links of equal widths */
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  .navbar a.active {
+    background-color: #04AA6D;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  .mydivouter{
+	position:relative;
+	background: #f90;
+    width: 200px;
+    height: 120px;
+    margin: 0 auto;
+}
+.mydivoverlap{
+    position: relative;
+    z-index: 1;
+}
+.mybuttonoverlap{
+	position: absolute;
+    z-index: 2;
+    top: 44px;
+    display: none;
+    left: 59px;	
+}
+.mydivouter:hover .mybuttonoverlap{ 
+	display:block;
+}

@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  display: inline;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rgb(50, 52, 53);
+  min-height: 1vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:  center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes greenyellow{
+  0% {color: rgb(255, 255, 255);}
+  50%{color: rgb(255, 255, 255);}
+  51%{color: rgb(255, 255, 8);}
+  100%{color: rgb(255, 255, 9);}
+}
+
+.blinktime{
+  background-color:'#161F6D';
+  animation-name: greenyellow;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  text-align :'right' ;
+}
+
+.push-right {
+  text-align :'right' ;
+  animation-name: greenyellow;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+#div_top_hypers {
+  background-color:#eeeeee;
+  display:inline;      
+}
+#ul_top_hypers li{
+  display: inline;
+}
